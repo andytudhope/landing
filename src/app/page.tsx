@@ -57,20 +57,20 @@ const Navbar = () => {
   )
 }
 
-const Button = ({children, type}: {children: ReactElement, type:"primary" | "secondary"}) => {
+const Button = ({children, type, href}: {children: ReactElement, type:"primary" | "secondary", href: string}) => {
   if (type === "primary") {
     return (
-      <div className="bg-[#4B5B33] border-2 border-[#4B5B33] text-white px-[12px] py-[6px] rounded-full inline-flex gap-3 w-full sm:w-auto">
+      <a className="bg-[#4B5B33] border-2 border-[#4B5B33] text-white px-[12px] py-[6px] rounded-full inline-flex gap-3 w-full sm:w-auto cursor-pointer hover:bg-opacity-90 transition-all ease-in delay-100" href={href} target="_blank">
                 {children}
-              </div>
+              </a>
     )
   }
 
   if (type === "secondary") {
     return (
-      <div className="border-2 border-[#4B5B33] px-[12px] py-[6px] rounded-full w-full sm:w-auto">
+      <a className="border-2 border-[#4B5B33] px-[12px] py-[6px] rounded-full w-full sm:w-auto cursor-pointer hover:bg-[#4B5B33]/30 transition-all ease-in delay-100" href={href} target="_blank">
         {children}
-      </div>
+      </a>
     )
   }
 
@@ -99,12 +99,12 @@ const FirstFold = () => {
             Kernel is an open, peer-to-peer, learning environment focused on building a better web.
           </div>
           <div className="flex gap-6 mt-[32px] items-center sm:flex-row flex-col">
-            <Button type="primary">
+            <Button type="primary" href="https://apply.kernel.community">
               <>
                 Applications Open for KBX <ArrowRightIcon />
               </>
             </Button>
-            <Button type="secondary">
+            <Button type="secondary" href="https://www.kernel.community/en/start/">
               <>
                 Explore All
               </>
