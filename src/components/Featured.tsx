@@ -16,7 +16,8 @@ export type Fellow = {
   position: string,
   tag1: string,
   tag2: string | undefined | null,
-  image: ReactElement
+  image: ReactElement,
+  url: string | undefined | null
 }
 
 export type Project = {
@@ -79,146 +80,167 @@ export const fellows: Array<Fellow> = [
     position: "co-founder",
     tag1: "builder",
     tag2: "creative",
-    image: getImage('alex-smith', 'png')
+    image: getImage('alex-smith', 'png'),
+    url: "https://google.com"
   },
   {
     name: "Ella Watts",
     position: "co-founder, ABC",
     tag1: "builder",
     tag2: "protocols",
-    image: getImage('ella-watts', 'png')
+    image: getImage('ella-watts', 'png'),
+    url: "https://google.com"
   },
   {
     name: "Alanah Lam",
     position: "Designer @ Future Primitive",
     tag1: "creativity",
     tag2: "design",
-    image: getImage('alanah-lam', 'png')
+    image: getImage('alanah-lam', 'png'),
+    url: "https://google.com"
   },
   {
     name: "Patrick Cruz",
     position: "Founder, Deepwork Studio",
     tag1: "gaming",
     tag2: "wellness",
-    image: getImage('patrick-cruz', 'png')
+    image: getImage('patrick-cruz', 'png'),
+    url: "https://google.com"
   },
   {
     name: "Mitch Albom",
     position: "Designer",
     tag1: "design",
     tag2: "ux",
-    image: getImage('mitch', 'png')
+    image: getImage('mitch', 'png'),
+    url: "https://google.com"
   },
   {
     name: "Benny Giang",
     position: "Co-Founder, Future Primitive",
     tag1: "builder",
     tag2: "NFTs",
-    image: getImage('benny-giang', 'png')
+    image: getImage('benny-giang', 'png'),
+    url: "https://google.com"
   },
   {
     name: "Lesly",
     position: "Tinkerer",
     tag1: "climate",
     tag2: null,
-    image: getImage('lesly', 'png')
+    image: getImage('lesly', 'png'),
+    url: "https://google.com"
   },
   {
     name: "Alex Smith",
     position: "co-founder",
     tag1: "builder",
     tag2: "creative",
-    image: getImage('alex-smith', 'png')
+    image: getImage('alex-smith', 'png'),
+    url: "https://google.com"
   },
   {
     name: "Ella Watts",
     position: "co-founder, ABC",
     tag1: "builder",
     tag2: "protocols",
-    image: getImage('ella-watts', 'png')
+    image: getImage('ella-watts', 'png'),
+    url: "https://google.com"
   },
   {
     name: "Alanah Lam",
     position: "Designer @ Future Primitive",
     tag1: "creativity",
     tag2: "design",
-    image: getImage('alanah-lam', 'png')
+    image: getImage('alanah-lam', 'png'),
+    url: "https://google.com"
   },
   {
     name: "Patrick Cruz",
     position: "Founder, Deepwork Studio",
     tag1: "gaming",
     tag2: "wellness",
-    image: getImage('patrick-cruz', 'png')
+    image: getImage('patrick-cruz', 'png'),
+    url: "https://google.com"
   },
   {
     name: "Mitch Albom",
     position: "Designer",
     tag1: "design",
     tag2: "ux",
-    image: getImage('mitch', 'png')
+    image: getImage('mitch', 'png'),
+    url: "https://google.com"
   },
   {
     name: "Benny Giang",
     position: "Co-Founder, Future Primitive",
     tag1: "builder",
     tag2: "NFTs",
-    image: getImage('benny-giang', 'png')
+    image: getImage('benny-giang', 'png'),
+    url: "https://google.com"
   },
   {
     name: "Lesly",
     position: "Tinkerer",
     tag1: "climate",
     tag2: null,
-    image: getImage('lesly', 'png')
+    image: getImage('lesly', 'png'),
+    url: "https://google.com"
   },
   {
     name: "Alex Smith",
     position: "co-founder",
     tag1: "builder",
     tag2: "creative",
-    image: getImage('alex-smith', 'png')
+    image: getImage('alex-smith', 'png'),
+    url: "https://google.com"
   },
   {
     name: "Ella Watts",
     position: "co-founder, ABC",
     tag1: "builder",
     tag2: "protocols",
-    image: getImage('ella-watts', 'png')
+    image: getImage('ella-watts', 'png'),
+    url: "https://google.com"
   },
   {
     name: "Alanah Lam",
     position: "Designer @ Future Primitive",
     tag1: "creativity",
     tag2: "design",
-    image: getImage('alanah-lam', 'png')
+    image: getImage('alanah-lam', 'png'),
+    url: "https://google.com"
   },
   {
     name: "Patrick Cruz",
     position: "Founder, Deepwork Studio",
     tag1: "gaming",
     tag2: "wellness",
-    image: getImage('patrick-cruz', 'png')
+    image: getImage('patrick-cruz', 'png'),
+    url: "https://google.com"
   },
   {
     name: "Mitch Albom",
     position: "Designer",
     tag1: "design",
     tag2: "ux",
-    image: getImage('mitch', 'png')
+    image: getImage('mitch', 'png'),
+    url: "https://google.com"
   },
   {
     name: "Benny Giang",
     position: "Co-Founder, Future Primitive",
     tag1: "builder",
     tag2: "NFTs",
-    image: getImage('benny-giang', 'png')
+    image: getImage('benny-giang', 'png'),
+    url: "https://google.com"
   },
   {
     name: "Lesly",
     position: "Tinkerer",
     tag1: "climate",
     tag2: null,
-    image: getImage('lesly', 'png')
+    image: getImage('lesly', 'png'),
+    url: "https://google.com"
   },
 ]
