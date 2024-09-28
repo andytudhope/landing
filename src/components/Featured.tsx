@@ -1,4 +1,3 @@
-// tag2 is optional
 import self from "@/utils/self";
 import Image from "next/image";
 import { ReactElement } from "react";
@@ -41,6 +40,26 @@ export const projects: Array<Project> = [
     url: 'https://google.com',
     projectImage: getImage("toucan", "png", "projects"),
     fellowImage: getImage("alanah-lam", "png", "fellows")
+  },
+  {
+    name: "Impact Protocol",
+    fellowName: "Sidcode",
+    description: "impact protocol",
+    tag1: "impact",
+    tag2: "climate",
+    url: "https://google.com",
+    projectImage: getImage("impact", "png", "projects"),
+    fellowImage: getImage('patrick-cruz', 'png', "fellows")
+  },
+  {
+    name: "Impact Protocol",
+    fellowName: "Sidcode",
+    description: "impact protocol",
+    tag1: "impact",
+    tag2: "climate",
+    url: "https://google.com",
+    projectImage: getImage("impact", "png", "projects"),
+    fellowImage: getImage('patrick-cruz', 'png', "fellows")
   },
   {
     name: "Impact Protocol",

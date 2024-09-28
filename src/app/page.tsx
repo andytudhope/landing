@@ -284,8 +284,64 @@ const FourthFold = () => {
 // kernel syllabus table
 const FifthFold = () => {
   return (
-    <div className={`h-[500px] w-full bg-red-300 flex flex-col items-center p-3 overflow-hidden`}>
-      Explore the Kernel Book
+    <div className={`h-[790px] w-full flex flex-col items-center p-3 overflow-hidden`}>
+      <div className="text-4xl">
+        Explore the Kernel Book
+      </div>
+      <div className="text-xl w-[990px]">
+        Kernel topics are open source and open access. Explore the content and apply to be in the next Kernel block to learn alongside like-minded individuals creating change in web3 and beyond.
+      </div>
+      <table className="border-gray-200/50 text-left mt-12 divide-y rounded-md border-separate p-4 border-2 shadow-xl">
+        <thead className="[&>*]:[&>*]:px-6 [&>*]:[&>*]:py-4 ">
+          <tr>
+            <th>Theme</th>
+            <th>Personal Inquiry</th>
+            <th>Web3 Enquiry</th>
+          </tr>
+        </thead>
+        <tbody className="divide-y [&>*]:[&>*]:px-6 [&>*]:[&>*]:py-4">
+          <tr>
+            <td className="hover:underline cursor-pointer hover:text-sky-800">Introduction to Kernel</td>
+            <td>The Play of Pattern</td>
+            <td>Trust</td>
+          </tr>
+          <tr>
+            <td className="hover:underline cursor-pointer">Ethereum’s History and State</td>
+            <td>Meaning</td>
+            <td>Value</td>
+          </tr>
+          <tr>
+            <td className="hover:underline cursor-pointer">A Global Financial System</td>
+            <td>Better Questions</td>
+            <td>Money and Speech</td>
+          </tr>
+          <tr>
+            <td className="hover:underline cursor-pointer">Take Back The Web</td>
+            <td>Intention</td>
+            <td>Freedom</td>
+          </tr>
+          <tr>
+            <td className="hover:underline cursor-pointer">Internet Age Institutions</td>
+            <td>Govern Yourself</td>
+            <td>Liberally Radical</td>
+          </tr>
+          <tr>
+            <td className="hover:underline cursor-pointer">Tokens and Mechanism Design</td>
+            <td>Listening and Stories</td>
+            <td>Incentives</td>
+          </tr>
+          <tr>
+            <td className="hover:underline cursor-pointer">Scaling Principled Games </td>
+            <td>Learn How To Learn</td>
+            <td>Censorship Resistance</td>
+          </tr>
+          <tr>
+            <td className="hover:underline cursor-pointer">The Gift</td>
+            <td>Giving</td>
+            <td>Scale-ability</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   )
 }
@@ -293,8 +349,12 @@ const FifthFold = () => {
 // footer
 const Footer = () => {
   return (
-    <div className={`h-[250px] w-full bg-green-300 flex flex-col items-center p-3 overflow-hidden`}>
-
+    <div className={`h-[250px] w-full flex flex-col items-center p-3 overflow-hidden`}>
+      <Button type="primary" href="https://www.kernel.community/en/start/">
+        <div className="text-2xl inline-flex items-center gap-4">
+          Explore All <ArrowRightIcon />
+        </div>
+      </Button>
     </div>
   )
 }
