@@ -6,6 +6,14 @@ import Trees from "../../public/trees.png";
 import {fellows as featured, projects} from "../components/Featured";
 import type { Fellow, Project } from "../components/Featured";
 import { ReactElement } from "react";
+import { Miriam_Libre } from 'next/font/google'
+
+const miriam = Miriam_Libre({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: ['400', '700']
+})
+
 
 const KernelPlantComponent = () => {
   return (
@@ -60,7 +68,7 @@ const Navbar = () => {
 const Button = ({children, type, href}: {children: ReactElement, type:"primary" | "secondary", href: string}) => {
   if (type === "primary") {
     return (
-      <a className="bg-[#4B5B33] border-2 border-[#4B5B33] text-white px-[12px] py-[6px] rounded-full inline-flex gap-3 w-full sm:w-auto cursor-pointer hover:bg-opacity-90 transition-all ease-in delay-100" href={href} target="_blank">
+      <a className="bg-[#4B5B33] border-2 border-[#4B5B33] text-white px-[8px] py-[6px] rounded-full inline-flex gap-3 w-full sm:w-auto cursor-pointer hover:bg-opacity-90 transition-all ease-in delay-100" href={href} target="_blank">
                 {children}
               </a>
     )
@@ -68,7 +76,7 @@ const Button = ({children, type, href}: {children: ReactElement, type:"primary" 
 
   if (type === "secondary") {
     return (
-      <a className="border-2 border-[#4B5B33] px-[12px] py-[6px] rounded-full w-full sm:w-auto cursor-pointer hover:bg-[#4B5B33]/30 transition-all ease-in delay-100" href={href} target="_blank">
+      <a className="border-2 border-[#4B5B33] px-[8px] py-[6px] rounded-full w-full sm:w-auto cursor-pointer hover:bg-[#4B5B33]/30 transition-all ease-in delay-100" href={href} target="_blank">
         {children}
       </a>
     )
@@ -87,7 +95,7 @@ const FirstFold = () => {
       </div>
       <div className="flex items-center sm:pl-16">
         <div className="sm:w-96 w-full p-12 sm:p-0">
-          <div className="flex flex-col justify-start text-4xl">
+          <div className={`flex flex-col justify-start text-4xl ${miriam.className}`}>
             <div>
               Building a better web
             </div>
@@ -181,10 +189,10 @@ const Fellows = () => {
 const SecondFold = () => {
   return (
     <div className={`h-[780px] w-full flex flex-col items-center p-3 relative bg-[#F9F9F9] overflow-clip`}>
-      <div className="sm:text-lg text-xl z-10 mt-14">
+      <div className="sm:text-lg text-xl z-10 mt-14 font-semibold text-legacyPurple">
         Celebrating 4 years of Kernel Blocks
       </div>
-      <div className="sm:text-4xl text-3xl z-10">
+      <div className={`sm:text-4xl text-3xl z-10 ${miriam.className} font-semibold`}>
         Meet the Kernel Fellows
       </div>
       <div className="w-full h-full grow overflow-hidden mt-6 z-10 mb-14">
@@ -203,10 +211,10 @@ const SecondFold = () => {
 const StatItem = ({big, description} :{big: string, description: string}) => {
   return (
   <div className="flex flex-col items-center justify-center hover:bg-[#F9F9F9] p-6 sm:p-0">
-    <div className="sm:text-6xl text-5xl">
+    <div className="sm:text-6xl text-5xl font-semibold">
       {big}
     </div>
-    <div className="sm:text-xl text-sm">
+    <div className={`sm:text-xl text-sm ${miriam.className}`}>
       {description}
     </div>
   </div>
@@ -271,7 +279,7 @@ const Projects = () => {
 const FourthFold = () => {
   return (
     <div className={`h-[500px] w-full bg-[#F9F9F9] flex flex-col items-center p-3 overflow-hidden relative my-12`}>
-      <div className="text-4xl mt-4">
+      <div className="text-4xl mt-4 font-bold">
         Featured Projects by Kernel Fellows
       </div>
       <div className="grid grid-rows-1 grid-flow-col absolute bottom-0 my-12 w-full px-3 overflow-x-auto overflow-y-hidden gap-6">
@@ -281,11 +289,24 @@ const FourthFold = () => {
   )
 }
 
+// const TableCell = ({text, href}: {text: string, href: string}) => {
+//   return (
+//     <td className={`cursor-pointer hover:text-sky-800 max-w-min`}>
+//       <a href="https://www.kernel.community/en/learn/module-0" className="group inline-flex flex-col" target="_blank">
+//         <span className="inline-flex flex-row">
+//           Introduction to Kernel
+//         </span>
+//         <div className="bg-legacyPurple/50 h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
+//       </a>
+//     </td>
+//   )
+// }
+
 // kernel syllabus table
 const FifthFold = () => {
   return (
     <div className={`sm:h-[790px] w-full flex flex-col items-center p-3`}>
-      <div className="sm:text-4xl text-3xl">
+      <div className="sm:text-4xl text-3xl font-bold">
         Explore the Kernel Book
       </div>
       <div className="sm:text-xl sm:w-[990px] text-base w-full text-center">
@@ -293,51 +314,66 @@ const FifthFold = () => {
       </div>
       <div className="w-full sm:w-[60%] h-full overflow-scroll sm:overflow-visible">
         <table className="border-gray-200/50 text-left mt-12 sm:divide-y rounded-md border-separate p-2 m-4 border-2 shadow-xl w-full">
-          <thead className="[&>*]:[&>*]:px-6 [&>*]:[&>*]:py-4">
+          <thead className="[&>*]:[&>*]:px-6 [&>*]:[&>*]:py-4 font-black">
             <tr>
               <th>Theme</th>
               <th>Personal Inquiry</th>
               <th>Web3 Enquiry</th>
             </tr>
           </thead>
-          <tbody className="divide-y [&>*]:[&>*]:px-6 [&>*]:[&>*]:py-4">
+          <tbody className={`divide-y [&>*]:[&>*]:px-6 [&>*]:[&>*]:py-4 ${miriam.className} text-lg`}>
             <tr>
-              <td className="hover:underline cursor-pointer hover:text-sky-800">Introduction to Kernel</td>
-              <td>The Play of Pattern</td>
-              <td>Trust</td>
+              <td className={`cursor-pointer hover:text-sky-800 max-w-min`}>
+                <a href="https://www.kernel.community/en/learn/module-0" className="group inline-flex flex-col" target="_blank">
+                  <span className="inline-flex flex-row">
+                    Introduction to Kernel
+                  </span>
+                  <div className="bg-legacyPurple/50 h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
+                </a>
+              </td>
+              <td className={`hover:underline cursor-pointer hover:text-sky-800`}>
+                <a href="https://www.kernel.community/en/learn/module-0/play-of-pattern" target="_blank">
+                  The Play of Pattern
+                </a>
+              </td>
+              <td className={`hover:underline cursor-pointer hover:text-sky-800`}>
+                <a href="https://www.kernel.community/en/learn/module-0/trust" target="_blank">
+                  Trust
+                </a>
+              </td>
             </tr>
             <tr>
-              <td className="hover:underline cursor-pointer">Ethereum’s History and State</td>
+              <td className={`hover:underline cursor-pointer hover:text-sky-800`}>Ethereum’s History and State</td>
               <td>Meaning</td>
               <td>Value</td>
             </tr>
             <tr>
-              <td className="hover:underline cursor-pointer">A Global Financial System</td>
+              <td className={`hover:underline cursor-pointer hover:text-sky-800`}>A Global Financial System</td>
               <td>Better Questions</td>
               <td>Money and Speech</td>
             </tr>
             <tr>
-              <td className="hover:underline cursor-pointer">Take Back The Web</td>
+              <td className={`hover:underline cursor-pointer hover:text-sky-800`}>Take Back The Web</td>
               <td>Intention</td>
               <td>Freedom</td>
             </tr>
             <tr>
-              <td className="hover:underline cursor-pointer">Internet Age Institutions</td>
+              <td className={`hover:underline cursor-pointer hover:text-sky-800`}>Internet Age Institutions</td>
               <td>Govern Yourself</td>
               <td>Liberally Radical</td>
             </tr>
             <tr>
-              <td className="hover:underline cursor-pointer">Tokens and Mechanism Design</td>
+              <td className={`hover:underline cursor-pointer hover:text-sky-800`}>Tokens and Mechanism Design</td>
               <td>Listening and Stories</td>
               <td>Incentives</td>
             </tr>
             <tr>
-              <td className="hover:underline cursor-pointer">Scaling Principled Games </td>
+              <td className={`hover:underline cursor-pointer hover:text-sky-800`}>Scaling Principled Games </td>
               <td>Learn How To Learn</td>
               <td>Censorship Resistance</td>
             </tr>
             <tr>
-              <td className="hover:underline cursor-pointer">The Gift</td>
+              <td className={`hover:underline cursor-pointer hover:text-sky-800`}>The Gift</td>
               <td>Giving</td>
               <td>Scale-ability</td>
             </tr>
@@ -352,11 +388,9 @@ const FifthFold = () => {
 const Footer = () => {
   return (
     <div className={`h-[250px] w-full flex flex-col items-center p-3 overflow-hidden`}>
-      <Button type="primary" href="https://www.kernel.community/en/start/">
-        <div className="text-2xl inline-flex items-center gap-4">
+      <a className="bg-[#4B5B33] border-2 border-[#4B5B33] text-white px-[22px] py-[6px] rounded-full inline-flex w-full sm:w-auto cursor-pointer hover:bg-opacity-90 transition-all ease-in delay-100 text-2xl items-center gap-4" href={'https://kernel.community/en/start'} target="_blank">
           Explore All <ArrowRightIcon />
-        </div>
-      </Button>
+      </a>
     </div>
   )
 }
