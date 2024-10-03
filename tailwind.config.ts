@@ -11,7 +11,8 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        legacyPurple: '#6166DC'
+        legacyPurple: '#6166DC',
+        primary: '#4B5B33'
       },
     },
   },
