@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     siteName: 'Kernel Communtiy',
     images: [
       {
-        url: 'kbx-landing.vercel.app/cover.png', // Must be an absolute URL
+        url: '/cover.png', // Must be an absolute URL
         width: 1800,
         height: 1600,
       }
