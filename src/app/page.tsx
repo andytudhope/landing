@@ -289,18 +289,18 @@ const FourthFold = () => {
   )
 }
 
-// const TableCell = ({text, href}: {text: string, href: string}) => {
-//   return (
-//     <td className={`cursor-pointer hover:text-sky-800 max-w-min`}>
-//       <a href="https://www.kernel.community/en/learn/module-0" className="group inline-flex flex-col" target="_blank">
-//         <span className="inline-flex flex-row">
-//           Introduction to Kernel
-//         </span>
-//         <div className="bg-legacyPurple/50 h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
-//       </a>
-//     </td>
-//   )
-// }
+const TableCell = ({text, href}: {text: string, href: string}) => {
+  return (
+    <td className={`cursor-pointer hover:text-sky-800 max-w-min`}>
+      <a href={href} className="group inline-flex flex-col" target="_blank">
+        <span className="inline-flex flex-row">
+          {text}
+        </span>
+        <div className="bg-legacyPurple/50 h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
+      </a>
+    </td>
+  )
+}
 
 // kernel syllabus table
 const FifthFold = () => {
@@ -323,59 +323,44 @@ const FifthFold = () => {
           </thead>
           <tbody className={`divide-y [&>*]:[&>*]:px-6 [&>*]:[&>*]:py-4 ${miriam.className} text-lg`}>
             <tr>
-              <td className={`cursor-pointer hover:text-sky-800 max-w-min`}>
-                <a href="https://www.kernel.community/en/learn/module-0" className="group inline-flex flex-col" target="_blank">
-                  <span className="inline-flex flex-row">
-                    Introduction to Kernel
-                  </span>
-                  <div className="bg-legacyPurple/50 h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
-                </a>
-              </td>
-              <td className={`hover:underline cursor-pointer hover:text-sky-800`}>
-                <a href="https://www.kernel.community/en/learn/module-0/play-of-pattern" target="_blank">
-                  The Play of Pattern
-                </a>
-              </td>
-              <td className={`hover:underline cursor-pointer hover:text-sky-800`}>
-                <a href="https://www.kernel.community/en/learn/module-0/trust" target="_blank">
-                  Trust
-                </a>
-              </td>
+              <TableCell text="Introduction to Kernel" href="https://www.kernel.community/en/learn/module-0" />
+              <TableCell text="Play of Pattern" href="https://www.kernel.community/en/learn/module-0/play-of-pattern" />
+              <TableCell text="Trust" href="https://www.kernel.community/en/learn/module-0/trust" />
             </tr>
             <tr>
-              <td className={`hover:underline cursor-pointer hover:text-sky-800`}>Ethereum’s History and State</td>
-              <td>Meaning</td>
-              <td>Value</td>
+              <TableCell text="Ethereum’s History and State" href="https://www.kernel.community/en/learn/module-0" />
+              <TableCell text="Meaning" href="https://www.kernel.community/en/learn/module-0" />
+              <TableCell text="Value" href="https://www.kernel.community/en/learn/module-0" />
             </tr>
             <tr>
-              <td className={`hover:underline cursor-pointer hover:text-sky-800`}>A Global Financial System</td>
-              <td>Better Questions</td>
-              <td>Money and Speech</td>
+              <TableCell text="A Global Financial System" href="https://www.kernel.community/en/learn/module-0" />
+              <TableCell text="Better Questions" href="https://www.kernel.community/en/learn/module-0" />
+              <TableCell text="Money and Speech" href="https://www.kernel.community/en/learn/module-0" />
             </tr>
             <tr>
-              <td className={`hover:underline cursor-pointer hover:text-sky-800`}>Take Back The Web</td>
-              <td>Intention</td>
-              <td>Freedom</td>
+              <TableCell text="Take Back the Web" href="https://www.kernel.community/en/learn/module-0" />
+              <TableCell text="Intention" href="https://www.kernel.community/en/learn/module-0" />
+              <TableCell text="Freedom" href="https://www.kernel.community/en/learn/module-0" />
             </tr>
             <tr>
-              <td className={`hover:underline cursor-pointer hover:text-sky-800`}>Internet Age Institutions</td>
-              <td>Govern Yourself</td>
-              <td>Liberally Radical</td>
+              <TableCell text="Internet Age Institutions" href="https://www.kernel.community/en/learn/module-0" />
+              <TableCell text="Govern Yourself" href="https://www.kernel.community/en/learn/module-0" />
+              <TableCell text="Liberally Radical" href="https://www.kernel.community/en/learn/module-0" />
             </tr>
             <tr>
-              <td className={`hover:underline cursor-pointer hover:text-sky-800`}>Tokens and Mechanism Design</td>
-              <td>Listening and Stories</td>
-              <td>Incentives</td>
+              <TableCell text="Tokens and Mechanism Design" href="https://www.kernel.community/en/learn/module-0" />
+              <TableCell text="Listening and Stories" href="https://www.kernel.community/en/learn/module-0" />
+              <TableCell text="Incentives" href="https://www.kernel.community/en/learn/module-0" />
             </tr>
             <tr>
-              <td className={`hover:underline cursor-pointer hover:text-sky-800`}>Scaling Principled Games </td>
-              <td>Learn How To Learn</td>
-              <td>Censorship Resistance</td>
+              <TableCell text="Scaling Principled Games" href="https://www.kernel.community/en/learn/module-0" />
+              <TableCell text="Learn How To Learn" href="https://www.kernel.community/en/learn/module-0" />
+              <TableCell text="Censorship Resistanc" href="https://www.kernel.community/en/learn/module-0" />
             </tr>
             <tr>
-              <td className={`hover:underline cursor-pointer hover:text-sky-800`}>The Gift</td>
-              <td>Giving</td>
-              <td>Scale-ability</td>
+              <TableCell text="The Gift" href="https://www.kernel.community/en/learn/module-0" />
+              <TableCell text="Giving" href="https://www.kernel.community/en/learn/module-0" />
+              <TableCell text="Scale-ability" href="https://www.kernel.community/en/learn/module-0" />
             </tr>
           </tbody>
         </table>
