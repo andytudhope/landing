@@ -373,7 +373,7 @@ const FifthFold = () => {
             <tr>
               <TableCell text="Scaling Principled Games" href="https://www.kernel.community/en/learn/module-0" highlight />
               <TableCell text="Learn How To Learn" href="https://www.kernel.community/en/learn/module-0" />
-              <TableCell text="Censorship Resistanc" href="https://www.kernel.community/en/learn/module-0" />
+              <TableCell text="Censorship Resistance" href="https://www.kernel.community/en/learn/module-0" />
             </tr>
             <tr>
               <TableCell text="The Gift" href="https://www.kernel.community/en/learn/module-0" highlight />
