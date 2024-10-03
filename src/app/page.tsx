@@ -68,11 +68,11 @@ const ArrowRightIcon = () => {
 const Navbar = () => {
   return (
     <div className="backdrop-blur-[80.20px] py-[12px] px-[24px] flex justify-between border-2">
-      <div className="w-9">
+      <div className="sm:w-9 w-6">
         <Logo />
       </div>
       <div className="place-self-end">
-      <a href={"https://www.kernel.community/en/learn/module-0/trust"} className={`group inline-flex flex-col font-medium text-lg`} target="_blank">
+      <a href={"https://www.kernel.community/en/learn/module-0/trust"} className={`group inline-flex flex-col font-medium sm:text-lg text-base`} target="_blank">
         <span className="inline-flex flex-row">
           Explore All
         </span>
@@ -339,7 +339,7 @@ const FifthFold = () => {
               <th>Web3 Enquiry</th>
             </tr>
           </thead>
-          <tbody className={`divide-y [&>*]:[&>*]:px-6 [&>*]:[&>*]:py-4 ${miriam.className} text-lg`}>
+          <tbody className={`divide-y [&>*]:[&>*]:px-6 [&>*]:[&>*]:py-4 ${miriam.className} sm:text-lg text-base`}>
             <tr>
               <TableCell text="Introduction to Kernel" href="https://www.kernel.community/en/learn/module-0" highlight />
               <TableCell text="Play of Pattern" href="https://www.kernel.community/en/learn/module-0/play-of-pattern" />
