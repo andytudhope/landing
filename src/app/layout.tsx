@@ -10,7 +10,21 @@ const libreFranklin = Libre_Franklin({
 
 export const metadata: Metadata = {
   title: "Kernel Community",
-  description: "Kernel Community. Block 10 Applications now open.",
+  description: "Building a better web together, block by block. Block 10 Applications now open.",
+  openGraph: {
+    title: 'Kernel Community',
+    description: 'Building a better web together, block by block. Block 10 Applications now open.',
+    url: 'https://kernel.community',
+    siteName: 'Kernel Communtiy',
+    images: [
+      {
+        url: 'kbx-landing.vercel.app/cover.png', // Must be an absolute URL
+        width: 1800,
+        height: 1600,
+      }
+    ],
+    type: 'website',
+  },
 };
 
 export default function RootLayout({
@@ -20,6 +34,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body
         className={`${libreFranklin.className} antialiased`}
       >
