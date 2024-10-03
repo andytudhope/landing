@@ -147,7 +147,7 @@ const Tag = ({text}: {text: string}) => {
 
 const Fellow = ({fellow}: {fellow: Fellow }) => {
   return (
-    <div className="flex flex-col gap-2 h-[221px] w-[112px] ml-3">
+    <a className="flex flex-col gap-2 h-[221px] w-[112px] ml-3" href={fellow.url ?? ""} target="_blank">
       {/* image */}
       <div className="rounded-lg relative h-[112px] w-[112px]">
         {fellow.image}
@@ -165,7 +165,7 @@ const Fellow = ({fellow}: {fellow: Fellow }) => {
           {fellow.tag2 && <Tag text={fellow.tag2} />}
         </div>
       </div>
-    </div>
+    </a>
   )
 }
 
@@ -235,7 +235,7 @@ const ThirdFold = () => {
 
 const Project = ({project}: {project: Project}) => {
   return (
-    <div className="h-[320px] w-[320px] border-[1px] border-slate-200 flex flex-col rounded-lg m-3">
+    <a className="h-[320px] w-[320px] border-[1px] border-slate-200 flex flex-col rounded-lg m-3 cursor-pointer" href={project.url} target="_blank">
           <div className="relative min-h-[40%]">
             {project.projectImage}
             <div className="absolute -bottom-4 right-4 bg-neutral-900 rounded-full w-12 h-12">
@@ -257,7 +257,7 @@ const Project = ({project}: {project: Project}) => {
               {project.tag2 && <Tag text={project.tag2} />}
             </div>
           </div>
-        </div>
+        </a>
   )
 }
 
