@@ -118,7 +118,7 @@ const FirstFold = () => {
               Building a better web
             </div>
             <div>
-              together, block by block
+              together
             </div>
           </div>
           <div className="text-lg mt-6">
