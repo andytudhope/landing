@@ -127,7 +127,7 @@ const FirstFold = () => {
           <div className="flex gap-6 mt-[32px] items-center sm:flex-row flex-col">
             <Button type="primary" href="https://apply.kernel.community">
               <>
-                Applications Open for KBX <ArrowRightIcon />
+                Apply to KBX now <ArrowRightIcon />
               </>
             </Button>
             <Button type="secondary" href="https://www.kernel.community/en/start/">
@@ -171,7 +171,7 @@ const Fellow = ({fellow}: {fellow: Fellow }) => {
         {fellow.image}
       </div>
       {/* details */}
-      <div className="w-full cursor-pointer grow flex flex-col justify-between">
+      <div className="w-full cursor-pointer flex flex-col justify-between">
         <div className="font-bold">
           {fellow.name}
         </div>
@@ -179,8 +179,8 @@ const Fellow = ({fellow}: {fellow: Fellow }) => {
           {fellow.position}
         </div>
         <div className="inline-flex gap-3">
-          <Tag text={fellow.tag1} />
-          {fellow.tag2 && <Tag text={fellow.tag2} />}
+          {/* <Tag text={fellow.tag1} />
+          {fellow.tag2 && <Tag text={fellow.tag2} />} */}
         </div>
       </div>
     </a>
@@ -208,7 +208,7 @@ const SecondFold = () => {
   return (
     <div className={`h-[780px] w-full flex flex-col items-center p-3 relative bg-[#F9F9F9] overflow-clip`}>
       <div className="sm:text-lg text-xl z-10 mt-14 font-semibold text-legacyPurple">
-        Celebrating 4 years of Kernel Blocks
+        Celebrating 4 Years of Kernel Blocks
       </div>
       <div className={`sm:text-4xl text-3xl z-10 ${miriam.className}`}>
         Meet the Kernel Fellows
@@ -297,7 +297,7 @@ const Projects = () => {
 const FourthFold = () => {
   return (
     <div className={`h-[500px] w-full bg-[#F9F9F9] flex flex-col items-center p-3 overflow-hidden relative my-12`}>
-      <div className="text-4xl mt-4 font-medium">
+      <div className={`sm:text-4xl text-3xl z-10 ${miriam.className}`}>
         Featured Projects by Kernel Fellows
       </div>
       <div className="grid grid-rows-1 grid-flow-col absolute bottom-0 my-12 w-full px-3 overflow-x-auto overflow-y-hidden gap-6">
@@ -323,20 +323,20 @@ const TableCell = ({ text, href, highlight }: { text: string, href: string, high
 // kernel syllabus table
 const FifthFold = () => {
   return (
-    <div className={`sm:h-[790px] w-full flex flex-col items-center p-3`}>
+    <div className={`sm:h-[890px] w-full flex flex-col items-center p-3`}>
       <div className="sm:text-4xl text-3xl font-medium">
         Explore the Kernel Book
       </div>
-      <div className="sm:text-xl sm:w-[990px] text-base w-full text-center mt-6">
+      <div className="sm:text-xl sm:w-[990px] text-base w-full text-center mb-12 mt-6">
         Kernel topics are open source and open access. Explore the content and apply to be in the next Kernel block to learn alongside like-minded individuals creating change in web3 and beyond.
       </div>
-      <div className="w-full sm:w-[60%] h-full overflow-scroll sm:overflow-visible">
-        <table className="border-gray-200/50 text-left mt-12 sm:divide-y rounded-md border-separate p-2 m-4 border-2 shadow-xl w-full">
-          <thead className="[&>*]:[&>*]:px-6 [&>*]:[&>*]:py-4 font-black">
+      <div className="w-full sm:w-[60%] h-full overflow-auto">
+        <table className="border-gray-200/50 text-left sm:divide-y rounded-md border-separate border-2 shadow-xl mx-auto">
+          <thead className="[&>*]:[&>*]:px-6 [&>*]:[&>*]:py-4 font-black sm:text-lg text-base">
             <tr>
-              <th>Theme</th>
+              <th>Title</th>
               <th>Personal Inquiry</th>
-              <th>Web3 Enquiry</th>
+              <th>Web3 Inquiry</th>
             </tr>
           </thead>
           <tbody className={`divide-y [&>*]:[&>*]:px-6 [&>*]:[&>*]:py-4 ${miriam.className} sm:text-lg text-base`}>
@@ -390,9 +390,9 @@ const FifthFold = () => {
 // footer
 const Footer = () => {
   return (
-    <div className={`h-[250px] w-full flex flex-col items-center p-3 overflow-hidden mt-12`}>
+    <div className={`h-[250px] w-full flex flex-col items-center p-3 overflow-hidden pt-12`}>
       <a className="bg-[#4B5B33] border-2 border-[#4B5B33] text-white px-[22px] py-[6px] rounded-full inline-flex w-full sm:w-auto cursor-pointer hover:bg-opacity-90 transition-all ease-in delay-100 text-2xl items-center gap-4" href={'https://kernel.community/en/start'} target="_blank">
-          Explore All <ArrowRightIcon />
+          About Kernel <ArrowRightIcon />
       </a>
     </div>
   )
@@ -405,9 +405,9 @@ export default function Home() {
 
       <FirstFold />
 
-      <SecondFold />
-
       <ThirdFold />
+
+      <SecondFold />
 
       <FourthFold />
 
