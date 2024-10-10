@@ -1,20 +1,19 @@
 import Image from "next/image";
 import KernelPlant from "../../public/kernel-plant.gif";
 import PixelBg from "../../public/pixel.png";
-import ArrowRight from "../../public/arrow-right.svg";
 import Trees from "../../public/trees.png";
 import LogoImage from "../../public/logo.png";
 import {fellows as featured, projects} from "../components/Featured";
 import type { Fellow, Project } from "../components/Featured";
 import { ReactElement } from "react";
 import { Miriam_Libre } from 'next/font/google'
+import { MoveRight } from 'lucide-react';
 
 const miriam = Miriam_Libre({
   subsets: ['latin'],
   display: 'swap',
   weight: ['400', '700']
 })
-
 
 const KernelPlantComponent = () => {
   return (
@@ -52,19 +51,6 @@ const PixelBgComponent = () => {
   )
 }
 
-const ArrowRightIcon = () => {
-  return (
-    <div className="relative w-6 h-6">
-      <Image
-      src={ArrowRight}
-      alt="right arrow"
-      objectFit="cover"
-      fill
-    />
-    </div>
-  )
-}
-
 const Navbar = () => {
   return (
     <div className="backdrop-blur-[80.20px] py-[12px] px-[24px] flex justify-between border-2">
@@ -73,8 +59,8 @@ const Navbar = () => {
       </div>
       <div className="place-self-end">
       <a href={"https://www.kernel.community/en/learn/module-0/trust"} className={`group inline-flex flex-col font-medium sm:text-lg text-base`} target="_blank">
-        <span className="inline-flex flex-row">
-          Explore All
+        <span className="inline-flex flex-row items-center gap-2">
+          Read the Kernel Book <MoveRight />
         </span>
         <div className="bg-primary h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
       </a>
@@ -127,12 +113,12 @@ const FirstFold = () => {
           <div className="flex gap-6 mt-[32px] items-center sm:flex-row flex-col">
             <Button type="primary" href="https://apply.kernel.community">
               <>
-                Apply to KBX now <ArrowRightIcon />
+                Apply to KBX now <MoveRight />
               </>
             </Button>
             <Button type="secondary" href="https://www.kernel.community/en/start/">
               <>
-                Explore All
+                Read the Book
               </>
             </Button>
           </div>
@@ -163,7 +149,7 @@ const Tag = ({text}: {text: string}) => {
   )
 }
 
-const Fellow = ({fellow}: {fellow: Fellow }) => {
+const Fellow = ({ fellow }: { fellow: Fellow }) => {
   return (
     <a className="flex flex-col gap-2 h-[221px] w-[112px] ml-3" href={fellow.url ?? ""} target="_blank">
       {/* image */}
@@ -392,7 +378,7 @@ const Footer = () => {
   return (
     <div className={`h-[250px] w-full flex flex-col items-center p-3 overflow-hidden pt-12`}>
       <a className="bg-[#4B5B33] border-2 border-[#4B5B33] text-white px-[22px] py-[6px] rounded-full inline-flex w-full sm:w-auto cursor-pointer hover:bg-opacity-90 transition-all ease-in delay-100 text-2xl items-center gap-4" href={'https://kernel.community/en/start'} target="_blank">
-          About Kernel <ArrowRightIcon />
+          About Kernel <MoveRight />
       </a>
     </div>
   )
