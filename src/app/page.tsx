@@ -242,11 +242,11 @@ const Project = ({project}: {project: Project}) => {
     <a className="h-[320px] w-[320px] border-[1px] border-slate-200 flex flex-col rounded-lg m-3 cursor-pointer" href={project.url} target="_blank">
           <div className="relative min-h-[40%]">
             {project.projectImage}
-            <div className="absolute -bottom-4 right-4 bg-neutral-900 rounded-full w-12 h-12">
+            {/* <div className="absolute -bottom-4 right-4 bg-neutral-900 rounded-full w-12 h-12">
               <div className="relative h-full w-full rounded-full overflow-clip">
               {project.fellowImage}
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="flex flex-col min-h-[60%] overflow-auto justify-between p-2">
             <div className="flex flex-col">

@@ -6,7 +6,7 @@ const baseUrl = self
 
 const getImage = (name: string, dir: "fellows" | "projects" = "fellows") => {
   return (
-    <Image src={`${baseUrl}/${dir}/${name}`} alt="fellow image" objectFit="cover" objectPosition="top" fill className="rounded-lg"></Image>
+    <Image src={`${baseUrl}/${dir}/${name}`} alt="fellow image" objectFit="cover" objectPosition="center" fill className="rounded-lg"></Image>
   )
 }
 
@@ -23,7 +23,7 @@ export type Fellow = {
 export type Project = {
   name: string,
   fellowName: string,
-  fellowImage: ReactElement,
+  fellowImage?: ReactElement,
   projectImage: ReactElement,
   description: string,
   tag1: string,
@@ -33,14 +33,112 @@ export type Project = {
 
 export const projects: Array<Project> = [
   {
+    name: 'Pods Finance',
+    fellowName: 'Rafaella Baraldo',
+    description: 'The fastest way to offer crypto backed loans. ',
+    tag1: 'Defi',
+    tag2: null,
+    url: 'https://www.pods.finance/',
+    projectImage: getImage("pods.jpeg", "projects"),
+  },
+  {
+    name: 'Push',
+    fellowName: 'Harsh Rajat & Richa Joshi',
+    description: 'The communication protocol of web3. ',
+    tag1: 'Communications',
+    tag2: null,
+    url: 'https://push.org/',
+    projectImage: getImage("push.jpeg", "projects"),
+  },
+  {
+    name: 'Coinshift',
+    fellowName: 'Tarun Gupta',
+    description: 'The communication protocol of web3. ',
+    tag1: 'Wallets',
+    tag2: null,
+    url: 'https://coinshift.xyz/',
+    projectImage: getImage("coinshift.png", "projects"),
+  },
+  {
     name: 'Sherlock',
     fellowName: 'Jack Sanford',
-    description: 'carbon points',
-    tag1: 'climate',
-    tag2: 'refi',
+    description: 'The communication protocol of web3. ',
+    tag1: 'Security',
+    tag2: null,
     url: 'https://sherlock.xyz/',
-    projectImage: getImage("toucan.png", "projects"),
-    fellowImage: getImage("alanah-lam.png", "fellows")
+    projectImage: getImage("sherlock.jpeg", "projects"),
+  },
+  {
+    name: 'Coinvise',
+    fellowName: 'Jenil Thakker',
+    description: 'The communication protocol of web3. ',
+    tag1: 'Tokens',
+    tag2: null,
+    url: 'https://www.coinvise.co/',
+    projectImage: getImage("coinvise.jpeg", "projects"),
+  },
+  {
+    name: 'Toucan',
+    fellowName: 'Raphael Haupt, James Farrell',
+    description: 'The communication protocol of web3. ',
+    tag1: 'Climate Finance',
+    tag2: null,
+    url: 'https://toucan.earth/',
+    projectImage: getImage("toucan.jpeg", "projects"),
+  },
+  {
+    name: 'Bonfire',
+    fellowName: 'Melissa Zhang, Matt Alston',
+    description: 'The communication protocol of web3. ',
+    tag1: 'Token Communities',
+    tag2: 'Creators',
+    url: 'https://www.bonfire.xyz/',
+    projectImage: getImage("bonfire.jpeg", "projects"),
+  },
+  {
+    name: 'LiFi',
+    fellowName: 'Philipp Zentner',
+    description: 'The communication protocol of web3. ',
+    tag1: 'Interoperability',
+    tag2: 'Exchanges',
+    url: 'https://li.fi/',
+    projectImage: getImage("lifi.jpeg", "projects"),
+  },
+  {
+    name: 'Jokerace',
+    fellowName: 'David Phelps, Sean McCaffery',
+    description: 'The communication protocol of web3. ',
+    tag1: 'Contests',
+    tag2: null,
+    url: 'https://www.jokerace.io/',
+    projectImage: getImage("jokerace.jpeg", "projects"),
+  },
+  {
+    name: 'Chaos Labs',
+    fellowName: 'Omer Goldberg',
+    description: 'The communication protocol of web3. ',
+    tag1: 'Security',
+    tag2: 'DeFi',
+    url: 'https://chaoslabs.xyz/',
+    projectImage: getImage("chaos.jpeg", "projects"),
+  },
+  {
+    name: 'Future Primitive',
+    fellowName: 'Benny Giang',
+    description: 'The communication protocol of web3. ',
+    tag1: 'Token Primitives',
+    tag2: null,
+    url: 'https://futureprimitive.xyz/',
+    projectImage: getImage("fp.jpeg", "projects"),
+  },
+  {
+    name: 'DLogos',
+    fellowName: 'Anonymous',
+    description: 'The communication protocol of web3. ',
+    tag1: 'Dialogues',
+    tag2: 'Markets',
+    url: 'https://testnet.dlogos.xyz/',
+    projectImage: getImage("dlogos.jpeg", "projects"),
   },
 ]
 
