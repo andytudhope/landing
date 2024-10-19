@@ -296,20 +296,7 @@ const FourthFold = () => {
   )
 }
 
-const TableCell = ({ text, href, highlight }: { text: string, href: string, highlight?: boolean }) => {
-  return (
-    <td className={`cursor-pointer hover:text-legacyPurple/90 max-w-min`}>
-        <a href={href} className={`group inline-flex flex-col ${highlight ? 'text-legacyPurple/90' : ''}`} target="_blank">
-        <span className="inline-flex flex-row">
-          {text}
-        </span>
-        <div className="bg-legacyPurple/50 h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
-      </a>
-    </td>
-  )
-}
-
-// kernel syllabus table
+// kernel syllabus
 const FifthFold = () => {
   return (
     <div className={`w-full flex flex-col items-center p-3`}>
@@ -358,7 +345,7 @@ const FifthFold = () => {
             <div className="flip-card-front bg-white rounded-md shadow-xl border-gray-200/50 border-2">
               <div className="text-center font-black text-2xl sm:text-3xl p-8 border-b-2 border-gray-200 h-[175px]">
                 <a href="https://www.kernel.community/en/learn/module-1" className="font-bold">
-                  🌍 Ethereum's History and State
+                  🌍 Ethereum&apos;s History and State
                 </a>
               </div>
               <div className="grid grid-cols-2 divide-x divide-gray-200 h-[150px]">
@@ -379,7 +366,7 @@ const FifthFold = () => {
                 <div className="text-center font-black text-xl sm:text-2xl mb-4">Extended Reading</div>
                   <ul className="list-disc list-inside">
                     <li><a href="https://www.kernel.community/en/learn/module-1/playdough-protocols" className="text-blue-500 underline">Shaping</a></li>
-                    <li><a href="https://www.kernel.community/en/learn/module-1/understanding-ethereum" className="text-blue-500 underline">Ethereum's</a></li>
+                    <li><a href="https://www.kernel.community/en/learn/module-1/understanding-ethereum" className="text-blue-500 underline">Ethereum&apos;s</a></li>
                     <li><a href="https://www.kernel.community/en/learn/module-1/dreamers" className="text-blue-500 underline">Dreamers Of</a></li>
                     <li><a href="https://www.kernel.community/en/learn/module-1/joyful-subversion" className="text-blue-500 underline">Joyful Subversion</a></li>
                   </ul>
