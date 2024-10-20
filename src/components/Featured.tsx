@@ -44,7 +44,7 @@ export const projects: Array<Project> = [
   {
     name: 'Push',
     fellowName: 'Harsh Rajat & Richa Joshi',
-    description: 'The communication protocol of web3. ',
+    description: 'The communication protocol of web3.',
     tag1: 'Communications',
     tag2: null,
     url: 'https://push.org/',
@@ -53,7 +53,7 @@ export const projects: Array<Project> = [
   {
     name: 'Coinshift',
     fellowName: 'Tarun Gupta',
-    description: 'The communication protocol of web3. ',
+    description: 'Beyond a wallet: simpler, safer, and more rewarding.',
     tag1: 'Wallets',
     tag2: null,
     url: 'https://coinshift.xyz/',
@@ -62,7 +62,7 @@ export const projects: Array<Project> = [
   {
     name: 'Sherlock',
     fellowName: 'Jack Sanford',
-    description: 'The communication protocol of web3. ',
+    description: 'The final exam audit before mainnet.',
     tag1: 'Security',
     tag2: null,
     url: 'https://sherlock.xyz/',
@@ -71,7 +71,7 @@ export const projects: Array<Project> = [
   {
     name: 'Coinvise',
     fellowName: 'Jenil Thakker',
-    description: 'The communication protocol of web3. ',
+    description: 'Claim onchain rewards. A portal to the world of web3.',
     tag1: 'Tokens',
     tag2: null,
     url: 'https://www.coinvise.co/',
@@ -80,7 +80,7 @@ export const projects: Array<Project> = [
   {
     name: 'Toucan',
     fellowName: 'Raphael Haupt, James Farrell',
-    description: 'The communication protocol of web3. ',
+    description: 'Digital rails for climate finance.',
     tag1: 'Climate Finance',
     tag2: null,
     url: 'https://toucan.earth/',
@@ -89,7 +89,7 @@ export const projects: Array<Project> = [
   {
     name: 'Bonfire',
     fellowName: 'Melissa Zhang, Matt Alston',
-    description: 'The communication protocol of web3. ',
+    description: 'Bringing creators and brands closer to their biggest fans.',
     tag1: 'Token Communities',
     tag2: 'Creators',
     url: 'https://www.bonfire.xyz/',
@@ -98,7 +98,7 @@ export const projects: Array<Project> = [
   {
     name: 'LiFi',
     fellowName: 'Philipp Zentner',
-    description: 'The communication protocol of web3. ',
+    description: 'One API to swap, bridge, and zap across all major blockchains and protocols.',
     tag1: 'Interoperability',
     tag2: 'Exchanges',
     url: 'https://li.fi/',
@@ -107,7 +107,7 @@ export const projects: Array<Project> = [
   {
     name: 'Jokerace',
     fellowName: 'David Phelps, Sean McCaffery',
-    description: 'The communication protocol of web3. ',
+    description: 'Contests for communities to run, grow, and monetize.',
     tag1: 'Contests',
     tag2: null,
     url: 'https://www.jokerace.io/',
@@ -116,7 +116,7 @@ export const projects: Array<Project> = [
   {
     name: 'Chaos Labs',
     fellowName: 'Omer Goldberg',
-    description: 'The communication protocol of web3. ',
+    description: 'Transforms data on risk, security, and incentive strategies into powerful tools to evolve decentralized finance.',
     tag1: 'Security',
     tag2: 'DeFi',
     url: 'https://chaoslabs.xyz/',
@@ -125,7 +125,7 @@ export const projects: Array<Project> = [
   {
     name: 'Future Primitive',
     fellowName: 'Benny Giang',
-    description: 'The communication protocol of web3. ',
+    description: 'Net new human relationships by designing and building networks, objects, and narratives.',
     tag1: 'Token Primitives',
     tag2: null,
     url: 'https://futureprimitive.xyz/',
@@ -134,7 +134,7 @@ export const projects: Array<Project> = [
   {
     name: 'DLogos',
     fellowName: 'Anonymous',
-    description: 'The communication protocol of web3. ',
+    description: 'Participate in the world\'s most valuable conversations.',
     tag1: 'Dialogues',
     tag2: 'Markets',
     url: 'https://testnet.dlogos.xyz/',

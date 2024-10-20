@@ -146,9 +146,6 @@ const Tag = ({text}: {text: string}) => {
   return (
     <div className="inline-flex gap-3">
     <div className="border-[1px] border-slate-400 rounded-lg text-xs p-[2px]">
-      <span className="opacity-40 mr-[2px]">
-        #
-      </span>
       {text}
     </div>
   </div>
@@ -202,9 +199,8 @@ const SecondFold = () => {
       <div className={`sm:text-4xl text-3xl z-10 mt-20 ${miriam.className}`}>
         Meet the Kernel Fellows
       </div>
-      <div className="w-full h-full grow overflow-hidden mt-12 z-10 mb-14">
+      <div className="w-full sm:w-3/5 h-full grow overflow-hidden mt-12 z-10 mb-14">
         <div className="gap-6 sm:gap-16 grid grid-rows-2 grid-flow-col w-full h-full overflow-x-auto overflow-y-hidden">
-          {/* fellow component */}
           <Fellows />
         </div>
       </div>
@@ -287,7 +283,7 @@ const FourthFold = () => {
   return (
     <div className={`h-[500px] w-full bg-[#F9F9F9] flex flex-col items-center p-3 overflow-hidden relative my-12`}>
       <div className={`sm:text-4xl text-3xl mt-14 z-10 ${miriam.className}`}>
-        Featured Projects by Kernel Fellows
+        Projects by Kernel Fellows
       </div>
       <div className="grid grid-rows-1 grid-flow-col absolute bottom-12 sm:bottom-0 sm:mt-12 w-full px-3 overflow-x-auto overflow-y-hidden gap-6">
         <Projects />
@@ -304,7 +300,7 @@ const FifthFold = () => {
         Explore the Kernel Book
       </div>
       <div className="sm:text-xl sm:w-[990px] text-base w-full text-center mb-12 mt-6">
-        Kernel topics are open source and open access. Explore the content and apply to be in the next Kernel block to learn alongside like-minded individuals creating change in web3 and beyond.
+        The Kernel Book is an open-source spring of fundamental ideas relating our web. Start anywhere that calls to you. The book guides each Kernel Block, one chapter per week.
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-4 gap-2 sm:gap-4 mx-auto w-full sm:w-3/4">
         <div className="flip-card w-full">
@@ -315,7 +311,7 @@ const FifthFold = () => {
                   🌠 Introduction to Kernel
                 </a>
               </div>
-              <div className="grid grid-cols-2 divide-x divide-gray-200 h-[150px]">
+              <div className="grid grid-cols-2 divide-x divide-gray-200 h-[170px]">
                 <div className="py-8 px-4 text-center">
                   <div className="text-sm mb-6">Personal Inquiry</div>
                   <a href="https://www.kernel.community/en/learn/module-0/play-of-pattern" className="font-semibold text-base sm:text-sm">
@@ -333,9 +329,9 @@ const FifthFold = () => {
             <div className="flip-card-back bg-gray-100 rounded-md shadow-xl border-gray-200/50 border-2 p-4">
               <div className="text-center font-black text-xl sm:text-2xl mb-4">Extended Reading</div>
               <ul className="list-disc list-inside">
-                <li><a href="https://www.kernel.community/en/learn/module-0/money-language" className="text-blue-500 underline">Money Talks,</a></li>
-                <li><a href="https://www.kernel.community/en/learn/module-0/conversation" className="text-blue-500 underline">Try Listening</a></li>
-                <li><a href="https://www.kernel.community/en/learn/module-0/purpose" className="text-blue-500 underline">With Love</a></li>
+                <li className="my-2"><a href="https://www.kernel.community/en/learn/module-0/money-language" className="text-blue-500 underline">Money Talks,</a></li>
+                <li className="my-2"><a href="https://www.kernel.community/en/learn/module-0/conversation" className="text-blue-500 underline">Try Listening</a></li>
+                <li className="my-2"><a href="https://www.kernel.community/en/learn/module-0/purpose" className="text-blue-500 underline">With Love</a></li>
               </ul>
             </div>
           </div>
@@ -348,7 +344,7 @@ const FifthFold = () => {
                   🌍 Ethereum&apos;s History and State
                 </a>
               </div>
-              <div className="grid grid-cols-2 divide-x divide-gray-200 h-[150px]">
+              <div className="grid grid-cols-2 divide-x divide-gray-200 h-[170px]">
                 <div className="py-8 px-4 text-center">
                   <div className="text-sm mb-6">Personal Inquiry</div>
                   <a href="https://www.kernel.community/en/learn/module-1/meaning" className="font-semibold text-base sm:text-sm">
@@ -365,10 +361,10 @@ const FifthFold = () => {
               <div className="flip-card-back bg-gray-100 rounded-md shadow-xl border-gray-200/50 border-2 p-4">
                 <div className="text-center font-black text-xl sm:text-2xl mb-4">Extended Reading</div>
                   <ul className="list-disc list-inside">
-                    <li><a href="https://www.kernel.community/en/learn/module-1/playdough-protocols" className="text-blue-500 underline">Shaping</a></li>
-                    <li><a href="https://www.kernel.community/en/learn/module-1/understanding-ethereum" className="text-blue-500 underline">Ethereum&apos;s</a></li>
-                    <li><a href="https://www.kernel.community/en/learn/module-1/dreamers" className="text-blue-500 underline">Dreamers Of</a></li>
-                    <li><a href="https://www.kernel.community/en/learn/module-1/joyful-subversion" className="text-blue-500 underline">Joyful Subversion</a></li>
+                    <li className="my-2"><a href="https://www.kernel.community/en/learn/module-1/playdough-protocols" className="text-blue-500 underline">Shaping</a></li>
+                    <li className="my-2"><a href="https://www.kernel.community/en/learn/module-1/understanding-ethereum" className="text-blue-500 underline">Ethereum&apos;s</a></li>
+                    <li className="my-2"><a href="https://www.kernel.community/en/learn/module-1/dreamers" className="text-blue-500 underline">Dreamers Of</a></li>
+                    <li className="my-2"><a href="https://www.kernel.community/en/learn/module-1/joyful-subversion" className="text-blue-500 underline">Joyful Subversion</a></li>
                   </ul>
               </div>
             </div>
@@ -382,7 +378,7 @@ const FifthFold = () => {
             💰 A Global Financial System
             </a>
           </div>
-          <div className="grid grid-cols-2 divide-x divide-gray-200 h-[150px]">
+          <div className="grid grid-cols-2 divide-x divide-gray-200 h-[170px]">
             <div className="py-8 px-4 text-center">
               <div className="text-sm mb-6">Personal Inquiry</div>
               <a href="https://www.kernel.community/en/learn/module-2/better-questions" className="font-semibold text-base sm:text-sm">
@@ -399,10 +395,10 @@ const FifthFold = () => {
           <div className="flip-card-back bg-gray-100 rounded-md shadow-xl border-gray-200/50 border-2 p-4">
             <div className="text-center font-black text-xl sm:text-2xl mb-4">Extended Reading</div>
               <ul className="list-disc list-inside">
-                <li><a href="https://www.kernel.community/en/learn/module-2/shelling-out" className="text-blue-500 underline">Collecting</a></li>
-                <li><a href="https://www.kernel.community/en/learn/module-2/debt" className="text-blue-500 underline">Debt</a></li>
-                <li><a href="https://www.kernel.community/en/learn/module-2/banking" className="text-blue-500 underline">In Pyramids?</a></li>
-                <li><a href="https://www.kernel.community/en/learn/module-2/engineering" className="text-blue-500 underline">Engineer Better Solutions!</a></li>
+                <li className="my-2"><a href="https://www.kernel.community/en/learn/module-2/shelling-out" className="text-blue-500 underline">Collecting</a></li>
+                <li className="my-2"><a href="https://www.kernel.community/en/learn/module-2/debt" className="text-blue-500 underline">Debt</a></li>
+                <li className="my-2"><a href="https://www.kernel.community/en/learn/module-2/banking" className="text-blue-500 underline">In Pyramids?</a></li>
+                <li className="my-2"><a href="https://www.kernel.community/en/learn/module-2/engineering" className="text-blue-500 underline">Engineer Better Solutions!</a></li>
               </ul>
           </div>
           </div>
@@ -416,7 +412,7 @@ const FifthFold = () => {
             🌐 Take Back The Web
             </a>
           </div>
-          <div className="grid grid-cols-2 divide-x divide-gray-200 h-[150px]">
+          <div className="grid grid-cols-2 divide-x divide-gray-200 h-[170px]">
             <div className="py-8 px-4 text-center">
               <div className="text-sm mb-6">Personal Inquiry</div>
               <a href="https://www.kernel.community/en/learn/module-3/intention" className="font-semibold text-base sm:text-sm">
@@ -433,10 +429,10 @@ const FifthFold = () => {
           <div className="flip-card-back bg-gray-100 rounded-md shadow-xl border-gray-200/50 border-2 p-4">
             <div className="text-center font-black text-xl sm:text-2xl mb-4">Extended Reading</div>
               <ul className="list-disc list-inside">
-                <li><a href="https://www.kernel.community/en/learn/module-3/remember" className="text-blue-500 underline">Remember</a></li>
-                <li><a href="https://www.kernel.community/en/learn/module-3/time" className="text-blue-500 underline">The Present Time.</a></li>
-                <li><a href="https://www.kernel.community/en/learn/module-3/lock-it-open" className="text-blue-500 underline">Lock It Open</a></li>
-                <li><a href="https://www.kernel.community/en/learn/module-3/humility" className="text-blue-500 underline">With Humility</a></li>
+                <li className="my-2"><a href="https://www.kernel.community/en/learn/module-3/remember" className="text-blue-500 underline">Remember</a></li>
+                <li className="my-2"><a href="https://www.kernel.community/en/learn/module-3/time" className="text-blue-500 underline">The Present Time.</a></li>
+                <li className="my-2"><a href="https://www.kernel.community/en/learn/module-3/lock-it-open" className="text-blue-500 underline">Lock It Open</a></li>
+                <li className="my-2"><a href="https://www.kernel.community/en/learn/module-3/humility" className="text-blue-500 underline">With Humility</a></li>
               </ul>
           </div>
           </div>
@@ -450,7 +446,7 @@ const FifthFold = () => {
             ℹ️ Internet Age Institutions
             </a>
           </div>
-          <div className="grid grid-cols-2 divide-x divide-gray-200 h-[150px]">
+          <div className="grid grid-cols-2 divide-x divide-gray-200 h-[170px]">
             <div className="py-8 px-4 text-center">
               <div className="text-sm mb-6">Personal Inquiry</div>
               <a href="https://www.kernel.community/en/learn/module-4/governance" className="font-semibold text-base sm:text-sm">
@@ -467,10 +463,10 @@ const FifthFold = () => {
           <div className="flip-card-back bg-gray-100 rounded-md shadow-xl border-gray-200/50 border-2 p-4">
             <div className="text-center font-black text-xl sm:text-2xl mb-4">Extended Reading</div>
               <ul className="list-disc list-inside">
-                <li><a href="https://www.kernel.community/en/learn/module-4/art" className="text-blue-500 underline">Transform</a></li>
-                <li><a href="https://www.kernel.community/en/learn/module-4/consensus" className="text-blue-500 underline">Consensus</a></li>
-                <li><a href="https://www.kernel.community/en/learn/module-4/self-enquiry" className="text-blue-500 underline">By Inventing</a></li>
-                <li><a href="https://www.kernel.community/en/learn/module-4/the-garden" className="text-blue-500 underline">Paradise</a></li>
+                <li className="my-2"><a href="https://www.kernel.community/en/learn/module-4/art" className="text-blue-500 underline">Transform</a></li>
+                <li className="my-2"><a href="https://www.kernel.community/en/learn/module-4/consensus" className="text-blue-500 underline">Consensus</a></li>
+                <li className="my-2"><a href="https://www.kernel.community/en/learn/module-4/self-enquiry" className="text-blue-500 underline">By Inventing</a></li>
+                <li className="my-2"><a href="https://www.kernel.community/en/learn/module-4/the-garden" className="text-blue-500 underline">Paradise</a></li>
               </ul>
           </div>
           </div>
@@ -484,7 +480,7 @@ const FifthFold = () => {
             📈 Tokens and Mechanism Design
             </a>
           </div>
-          <div className="grid grid-cols-2 divide-x divide-gray-200 h-[150px]">
+          <div className="grid grid-cols-2 divide-x divide-gray-200 h-[170px]">
             <div className="py-8 px-4 text-center">
               <div className="text-sm mb-6">Personal Inquiry</div>
               <a href="https://www.kernel.community/en/learn/module-5/listening-stories" className="font-semibold text-base sm:text-sm">
@@ -501,10 +497,10 @@ const FifthFold = () => {
           <div className="flip-card-back bg-gray-100 rounded-md shadow-xl border-gray-200/50 border-2 p-4">
             <div className="text-center font-black text-xl sm:text-2xl mb-4">Extended Reading</div>
               <ul className="list-disc list-inside">
-                <li><a href="https://www.kernel.community/en/learn/module-5/amazon-unbounded-search" className="text-blue-500 underline">Unbounded Search</a></li>
-                <li><a href="https://www.kernel.community/en/learn/module-5/the-peoples-narrative" className="text-blue-500 underline">Through Narrative</a></li>
-                <li><a href="https://www.kernel.community/en/learn/module-5/reveal-the-universe" className="text-blue-500 underline">Reveals Universes</a></li>
-                <li><a href="https://www.kernel.community/en/learn/module-5/prosocial-value" className="text-blue-500 underline">Of Prosocial Value</a></li>
+                <li className="my-2"><a href="https://www.kernel.community/en/learn/module-5/amazon-unbounded-search" className="text-blue-500 underline">Unbounded Search</a></li>
+                <li className="my-2"><a href="https://www.kernel.community/en/learn/module-5/the-peoples-narrative" className="text-blue-500 underline">Through Narrative</a></li>
+                <li className="my-2"><a href="https://www.kernel.community/en/learn/module-5/reveal-the-universe" className="text-blue-500 underline">Reveals Universes</a></li>
+                <li className="my-2"><a href="https://www.kernel.community/en/learn/module-5/prosocial-value" className="text-blue-500 underline">Of Prosocial Value</a></li>
               </ul>
           </div>
           </div>
@@ -518,7 +514,7 @@ const FifthFold = () => {
             ⚖️ Scaling Principled Games
             </a>
           </div>
-          <div className="grid grid-cols-2 divide-x divide-gray-200 h-[150px]">
+          <div className="grid grid-cols-2 divide-x divide-gray-200 h-[170px]">
             <div className="py-8 px-4 text-center">
               <div className="text-sm mb-6">Personal Inquiry</div>
               <a href="https://www.kernel.community/en/learn/module-6/learn" className="font-semibold text-base sm:text-sm">
@@ -535,9 +531,9 @@ const FifthFold = () => {
           <div className="flip-card-back bg-gray-100 rounded-md shadow-xl border-gray-200/50 border-2 p-4">
             <div className="text-center font-black text-xl sm:text-2xl mb-4">Extended Reading</div>
               <ul className="list-disc list-inside">
-                <li><a href="https://www.kernel.community/en/learn/module-6/serenity" className="text-blue-500 underline">Serenely</a></li>
-                <li><a href="https://www.kernel.community/en/learn/module-6/inventing-on-principle" className="text-blue-500 underline">Principled</a></li>
-                <li><a href="https://www.kernel.community/en/learn/module-6/duende" className="text-blue-500 underline">Deep Song</a></li>
+                <li className="my-2"><a href="https://www.kernel.community/en/learn/module-6/serenity" className="text-blue-500 underline">Serenely</a></li>
+                <li className="my-2"><a href="https://www.kernel.community/en/learn/module-6/inventing-on-principle" className="text-blue-500 underline">Principled</a></li>
+                <li className="my-2"><a href="https://www.kernel.community/en/learn/module-6/duende" className="text-blue-500 underline">Deep Song</a></li>
               </ul>
           </div>
           </div>
@@ -551,7 +547,7 @@ const FifthFold = () => {
             🎁 The Gift
             </a>
           </div>
-          <div className="grid grid-cols-2 divide-x divide-gray-200 h-[150px]">
+          <div className="grid grid-cols-2 divide-x divide-gray-200 h-[170px]">
             <div className="py-8 px-4 text-center">
               <div className="text-sm mb-6">Personal Inquiry</div>
               <a href="https://www.kernel.community/en/learn/module-7/giving" className="font-semibold text-base sm:text-sm">
@@ -569,9 +565,9 @@ const FifthFold = () => {
         <div className="flip-card-back bg-gray-100 rounded-md shadow-xl border-gray-200/50 border-2 p-4">
             <div className="text-center font-black text-xl sm:text-2xl mb-4">Extended Reading</div>
               <ul className="list-disc list-inside">
-                <li><a href="https://www.kernel.community/en/learn/module-7/the-gift" className="text-blue-500 underline">The Gift</a></li>
-                <li><a href="https://www.kernel.community/en/learn/module-7/no-paradigm" className="text-blue-500 underline">Of No Paradigm</a></li>
-                <li><a href="https://www.kernel.community/en/learn/module-7/perfection" className="text-blue-500 underline">Is Perfection</a></li>
+                <li className="my-2"><a href="https://www.kernel.community/en/learn/module-7/the-gift" className="text-blue-500 underline">The Gift</a></li>
+                <li className="my-2"><a href="https://www.kernel.community/en/learn/module-7/no-paradigm" className="text-blue-500 underline">Of No Paradigm</a></li>
+                <li className="my-2"><a href="https://www.kernel.community/en/learn/module-7/perfection" className="text-blue-500 underline">Is Perfection</a></li>
               </ul>
           </div>
           </div>
@@ -585,7 +581,7 @@ const FifthFold = () => {
 const Footer = () => {
   return (
     <div className={`h-[250px] w-full flex flex-col items-center p-3 overflow-hidden pt-12`}>
-      <Button type="primary" href="https://kernel.community/en/start">
+      <Button type="primary" href="https://apply.kernel.community/">
         <>
           Apply to KBX now <MoveRight />
         </>
