@@ -10,12 +10,12 @@ const libreFranklin = Libre_Franklin({
 
 export const metadata: Metadata = {
   title: "Kernel Community",
-  description: "Building a better web together, block by block. Block 10 Applications now open.",
+  description: "Cultivating a greater web, together. Applications open for KBX.",
   openGraph: {
     title: 'Kernel Community',
-    description: 'Building a better web together, block by block. Block 10 Applications now open.',
+    description: "Cultivating a greater web, together. Applications open for KBX.',
     url: 'https://kernel.community',
-    siteName: 'Kernel Communtiy',
+    siteName: 'Kernel Community',
     images: [
       {
         url: '/cover.png', // Must be an absolute URL
