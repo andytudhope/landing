@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description: "Cultivating a greater web, together. Applications open for KBX.",
   openGraph: {
     title: 'Kernel Community',
-    description: "Cultivating a greater web, together. Applications open for KBX.',
+    description: "Cultivating a greater web, together. Applications open for KBX.",
     url: 'https://kernel.community',
     siteName: 'Kernel Community',
     images: [
