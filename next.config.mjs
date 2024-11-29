@@ -18,7 +18,16 @@ const nextConfig = {
         hostname:"kbx-landing.vercel.app",
       }
     ]
-  }
+  },
+  async redirects() {
+    return [
+      {
+        source: "/:path*", 
+        destination: "https://read.kernel.community/:path*",
+        permanent: true, 
+      },
+    ];
+  },
 };
 
 export default nextConfig;
