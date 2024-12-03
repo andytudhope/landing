@@ -22,7 +22,14 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: "/:path*", 
+        source: "/:path(.*)", // Match all paths except root
+        has: [
+          {
+            type: "query",
+            key: "path",
+            value: ".+",
+          },
+        ], 
         destination: "https://read.kernel.community/:path*",
         permanent: true, 
       },
