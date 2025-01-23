@@ -331,7 +331,8 @@ const FifthFold = () => {
             <div className="flip-card-back bg-gray-100 rounded-md shadow-xl border-gray-200/50 border-2 p-4">
               <div className="text-center font-black text-xl sm:text-2xl mb-4">Extended Reading</div>
               <ul className="list-disc list-inside">
-                <li className="my-2"><a href="https://read.kernel.community/en/learn/module-0/money-language" className="text-blue-500 underline">Money Talks,</a></li>
+                <li className="my-2"><a href="https://read.kernel.community/en/learn/module-0/money-language" className="text-blue-500 underline">Money Talks</a></li>
+                <li className="my-2"><a href="https://read.kernel.community/en/learn/module-0/weird-ways" className="text-blue-500 underline">In Weird Ways</a></li>
                 <li className="my-2"><a href="https://read.kernel.community/en/learn/module-0/conversation" className="text-blue-500 underline">Try Listening</a></li>
                 <li className="my-2"><a href="https://read.kernel.community/en/learn/module-0/purpose" className="text-blue-500 underline">With Love</a></li>
               </ul>
@@ -534,6 +535,7 @@ const FifthFold = () => {
             <div className="text-center font-black text-xl sm:text-2xl mb-4">Extended Reading</div>
               <ul className="list-disc list-inside">
                 <li className="my-2"><a href="https://read.kernel.community/en/learn/module-6/serenity" className="text-blue-500 underline">Serenely</a></li>
+                <li className="my-2"><a href="https://read.kernel.community/en/learn/module-6/participate" className="text-blue-500 underline">Participate In</a></li>
                 <li className="my-2"><a href="https://read.kernel.community/en/learn/module-6/inventing-on-principle" className="text-blue-500 underline">Principled</a></li>
                 <li className="my-2"><a href="https://read.kernel.community/en/learn/module-6/duende" className="text-blue-500 underline">Deep Song</a></li>
               </ul>
@@ -592,8 +594,7 @@ const Footer = () => {
         <div className="text-center font-black text-l sm:text-2xl mt-10 mb-4">Incubated by</div>
         <a href="https://www.gitcoin.co/" target="_blank" rel="noreferrer noopener">
         <div className="flex">
-          <Image className="mr-2" src={GitcoinLogo} objectFit="cover" height={40} width={40} alt="Gitcoin Logo" />
-          <Image src={Gitcoin} objectFit="cover" height={100} width={100} alt="Gitcoin" />
+          <Image src={Gitcoin} objectFit="cover" height={100} width={150} alt="Gitcoin" />
         </div>
         </a>
       </div>
