@@ -3,6 +3,8 @@ import KernelPlant from "../../public/kernel-plant.gif";
 import PixelBg from "../../public/pixel.png";
 import Trees from "../../public/trees.png";
 import LogoImage from "../../public/logo.png";
+import Gitcoin from "../../public/gitcoin.svg";
+import GitcoinLogo from "../../public/gitcoin-logo.svg";
 import {fellows as featured, projects} from "../components/Featured";
 import type { Fellow, Project } from "../components/Featured";
 import { ReactElement } from "react";
@@ -586,6 +588,15 @@ const Footer = () => {
           Apply to KBX now <MoveRight />
         </>
       </Button>
+      <div>
+        <div className="text-center font-black text-l sm:text-2xl mt-10 mb-4">Incubated by</div>
+        <a href="https://www.gitcoin.co/" target="_blank" rel="noreferrer noopener">
+        <div className="flex">
+          <Image className="mr-2" src={GitcoinLogo} objectFit="cover" height={40} width={40} alt="Gitcoin Logo" />
+          <Image src={Gitcoin} objectFit="cover" height={100} width={100} alt="Gitcoin" />
+        </div>
+        </a>
+      </div>
     </div>
   )
 }
