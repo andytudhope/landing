@@ -590,7 +590,7 @@ const Footer = () => {
         </>
       </Button>
       <div>
-        <div className="text-center font-black text-l sm:text-2xl mt-10 mb-4">Incubated by</div>
+        <div className="text-center font-medium text-l sm:text-2xl mt-10 mb-4">Incubated by</div>
         <a href="https://www.gitcoin.co/" target="_blank" rel="noreferrer noopener">
         <div className="flex">
           <Image src={Gitcoin} objectFit="cover" height={100} width={150} alt="Gitcoin" />
