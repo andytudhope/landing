@@ -4,7 +4,6 @@ import PixelBg from "../../public/pixel.png";
 import Trees from "../../public/trees.png";
 import LogoImage from "../../public/logo.png";
 import Gitcoin from "../../public/gitcoin.svg";
-import GitcoinLogo from "../../public/gitcoin-logo.svg";
 import {fellows as featured, projects} from "../components/Featured";
 import type { Fellow, Project } from "../components/Featured";
 import { ReactElement } from "react";
