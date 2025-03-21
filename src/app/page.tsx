@@ -21,7 +21,8 @@ const KernelPlantComponent = () => {
     <Image
       src={KernelPlant}
       alt="Kernel plant"
-      objectFit="cover"
+      unoptimized
+      style={{ objectFit: "cover" }}
       height={'1300'}
       width={'1200'}
     />
@@ -33,9 +34,10 @@ const Logo = () => {
     <Image
       src={LogoImage}
       alt="Kernel Logo"
-      objectFit="cover"
+      style={{ objectFit: "cover" }}
       height={'1300'}
       width={'1200'}
+      unoptimized
     />
   )
 }
@@ -45,9 +47,10 @@ const PixelBgComponent = () => {
     <Image
       src={PixelBg}
       alt="pixel background"
-      objectFit="cover"
+      style={{ objectFit: "cover" }}
       height={'1300'}
       width={'1200'}
+      unoptimized
     />
   )
 }
@@ -206,7 +209,7 @@ const SecondFold = () => {
         </div>
       </div>
       <div className="absolute bottom-0 right-0 overflow-clip">
-        <Image src={Trees} objectFit="cover" height={1100} width={1100} alt="trees background" />
+        <Image src={Trees} style={{ objectFit: "cover" }} height={1100} width={1100} alt="trees background" unoptimized />
       </div>
     </div>
   )
@@ -593,7 +596,7 @@ const Footer = () => {
         <div className="text-center font-medium text-l sm:text-2xl mt-10 mb-4">Incubated by</div>
         <a href="https://www.gitcoin.co/" target="_blank" rel="noreferrer noopener">
         <div className="flex">
-          <Image src={Gitcoin} objectFit="cover" height={100} width={150} alt="Gitcoin" />
+          <Image src={Gitcoin} style={{ objectFit: "cover" }} height={100} width={150} alt="Gitcoin" unoptimized />
         </div>
         </a>
       </div>

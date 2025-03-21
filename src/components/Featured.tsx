@@ -6,7 +6,7 @@ const baseUrl = self
 
 const getImage = (name: string, dir: "fellows" | "projects" = "fellows") => {
   return (
-    <Image src={`${baseUrl}/${dir}/${name}`} alt="fellow image" objectFit="cover" objectPosition="center" fill className="rounded-lg"></Image>
+    <Image src={`${baseUrl}/${dir}/${name}`} alt="fellow image" style={{ objectFit: "cover", objectPosition: "center" }} fill className="rounded-lg"></Image>
   )
 }
 
