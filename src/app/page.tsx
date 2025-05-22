@@ -124,7 +124,7 @@ const FirstFold = () => {
           <div className="flex gap-6 mt-[32px] items-center sm:flex-row flex-col">
             <Button type="primary" href="https://apply.kernel.community/11">
               <>
-                Apply to KB 11 now <MoveRight />
+                Apply to KB11 now <MoveRight />
               </>
             </Button>
             <Button type="secondary" href="https://read.kernel.community/en/learn/">
@@ -318,7 +318,7 @@ const Footer = () => {
     <div className={`h-[250px] w-full flex flex-col items-center p-3 overflow-hidden pt-12`}>
       <Button type="primary" href="https://apply.kernel.community/11">
         <>
-          Apply to KB 11 now <MoveRight />
+          Apply to KB11 now <MoveRight />
         </>
       </Button>
       <div>
