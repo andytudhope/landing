@@ -6,6 +6,7 @@ import LogoImage from "../../public/logo.png";
 import Gitcoin from "../../public/gitcoin.svg";
 import {fellows as featured, projects} from "../components/Featured";
 import type { Fellow, Project } from "../components/Featured";
+import FlipCardGrid from "@/components/Cards";
 import { ReactElement } from "react";
 import { Miriam_Libre } from 'next/font/google'
 import { MoveRight } from 'lucide-react';
@@ -118,12 +119,12 @@ const FirstFold = () => {
             We teach, we learn. We listen, create, support, and care. Together, we are planting the seeds required to grow connected systems we hope our descendants will enjoy.
           </div>
           <div className="text-lg mt-6">
-            Kernel Block X starts January 2025.
+            Kernel is a continuous learning environment. Apply and hear back in two weeks. KB11 begins in August.
           </div>
           <div className="flex gap-6 mt-[32px] items-center sm:flex-row flex-col">
-            <Button type="primary" href="https://apply.kernel.community">
+            <Button type="primary" href="https://apply.kernel.community/11">
               <>
-                Apply to KBX now <MoveRight />
+                Apply to KB 11 now <MoveRight />
               </>
             </Button>
             <Button type="secondary" href="https://read.kernel.community/en/learn/">
@@ -306,279 +307,7 @@ const FifthFold = () => {
       <div className="sm:text-xl sm:w-[990px] text-base w-full text-center mb-12 mt-6">
         The Kernel Book is an open-source spring of fundamental ideas relating our web. Start anywhere that calls to you. The book guides each Kernel Block, one chapter per week.
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-4 gap-2 sm:gap-4 mx-auto w-full sm:w-3/4">
-        <div className="flip-card w-full">
-          <div className="flip-card-inner relative">
-            <div className="flip-card-front bg-white rounded-md shadow-xl border-gray-200/50 border-2">
-              <div className="text-center font-black text-2xl sm:text-3xl p-8 border-b-2 border-gray-200 h-[175px]">
-                <a href="https://read.kernel.community/en/learn/module-0" className="font-bold">
-                  🌠 Introduction to Kernel
-                </a>
-              </div>
-              <div className="grid grid-cols-2 divide-x divide-gray-200 h-[170px]">
-                <div className="py-8 px-4 text-center">
-                  <div className="text-sm mb-6">Personal Inquiry</div>
-                  <a href="https://read.kernel.community/en/learn/module-0/play-of-pattern" className="font-semibold text-base sm:text-sm">
-                    🌈 Play of Pattern
-                  </a>
-                </div>
-                <div className="py-8 px-4 text-center">
-                  <div className="text-sm mb-6">Web3 Inquiry</div>
-                  <a href="https://read.kernel.community/en/learn/module-0/trust" className="font-semibold text-base sm:text-sm">
-                    ✍️ Trust
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="flip-card-back bg-gray-100 rounded-md shadow-xl border-gray-200/50 border-2 p-4">
-              <div className="text-center font-black text-xl sm:text-2xl mb-4">Extended Reading</div>
-              <ul className="list-disc list-inside">
-                <li className="my-2"><a href="https://read.kernel.community/en/learn/module-0/money-language" className="text-blue-500 underline">Money Talks</a></li>
-                <li className="my-2"><a href="https://read.kernel.community/en/learn/module-0/weird-ways" className="text-blue-500 underline">In Weird Ways</a></li>
-                <li className="my-2"><a href="https://read.kernel.community/en/learn/module-0/conversation" className="text-blue-500 underline">Try Listening</a></li>
-                <li className="my-2"><a href="https://read.kernel.community/en/learn/module-0/purpose" className="text-blue-500 underline">With Love</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div className="flip-card w-full">
-          <div className="flip-card-inner relative">
-            <div className="flip-card-front bg-white rounded-md shadow-xl border-gray-200/50 border-2">
-              <div className="text-center font-black text-2xl sm:text-3xl p-8 border-b-2 border-gray-200 h-[175px]">
-                <a href="https://read.kernel.community/en/learn/module-1" className="font-bold">
-                  🌍 Ethereum&apos;s History and State
-                </a>
-              </div>
-              <div className="grid grid-cols-2 divide-x divide-gray-200 h-[170px]">
-                <div className="py-8 px-4 text-center">
-                  <div className="text-sm mb-6">Personal Inquiry</div>
-                  <a href="https://read.kernel.community/en/learn/module-1/meaning" className="font-semibold text-base sm:text-sm">
-                    🤯 Meaning
-                  </a>
-                </div>
-                <div className="py-8 px-4 text-center">
-                  <div className="text-sm mb-6">Web3 Inquiry</div>
-                  <a href="https://read.kernel.community/en/learn/module-1/value" className="font-semibold text-base sm:text-sm">
-                    💯 Value
-                  </a>
-                </div>
-              </div>
-              <div className="flip-card-back bg-gray-100 rounded-md shadow-xl border-gray-200/50 border-2 p-4">
-                <div className="text-center font-black text-xl sm:text-2xl mb-4">Extended Reading</div>
-                  <ul className="list-disc list-inside">
-                    <li className="my-2"><a href="https://read.kernel.community/en/learn/module-1/playdough-protocols" className="text-blue-500 underline">Shaping</a></li>
-                    <li className="my-2"><a href="https://read.kernel.community/en/learn/module-1/understanding-ethereum" className="text-blue-500 underline">Ethereum&apos;s</a></li>
-                    <li className="my-2"><a href="https://read.kernel.community/en/learn/module-1/dreamers" className="text-blue-500 underline">Dreamers Of</a></li>
-                    <li className="my-2"><a href="https://read.kernel.community/en/learn/module-1/joyful-subversion" className="text-blue-500 underline">Joyful Subversion</a></li>
-                  </ul>
-              </div>
-            </div>
-        </div>
-      </div>
-      <div className="flip-card w-full">
-          <div className="flip-card-inner relative">
-            <div className="flip-card-front bg-white rounded-md shadow-xl border-gray-200/50 border-2">
-          <div className="text-center font-black text-2xl sm:text-3xl p-8 border-b-2 border-gray-200 h-[175px]">
-            <a href="https://read.kernel.community/en/learn/module-2" className="font-bold">
-            💰 A Global Financial System
-            </a>
-          </div>
-          <div className="grid grid-cols-2 divide-x divide-gray-200 h-[170px]">
-            <div className="py-8 px-4 text-center">
-              <div className="text-sm mb-6">Personal Inquiry</div>
-              <a href="https://read.kernel.community/en/learn/module-2/better-questions" className="font-semibold text-base sm:text-sm">
-              ⁉️ Better Questions
-              </a>
-            </div>
-            <div className="py-8 px-4 text-center">
-              <div className="text-sm mb-6">Web3 Inquiry</div>
-              <a href="https://read.kernel.community/en/learn/module-2/money-speech" className="font-semibold text-base sm:text-sm">
-              💸 Money and Speech
-              </a>
-            </div>
-          </div>
-          <div className="flip-card-back bg-gray-100 rounded-md shadow-xl border-gray-200/50 border-2 p-4">
-            <div className="text-center font-black text-xl sm:text-2xl mb-4">Extended Reading</div>
-              <ul className="list-disc list-inside">
-                <li className="my-2"><a href="https://read.kernel.community/en/learn/module-2/shelling-out" className="text-blue-500 underline">Collecting</a></li>
-                <li className="my-2"><a href="https://read.kernel.community/en/learn/module-2/debt" className="text-blue-500 underline">Debt</a></li>
-                <li className="my-2"><a href="https://read.kernel.community/en/learn/module-2/banking" className="text-blue-500 underline">In Pyramids?</a></li>
-                <li className="my-2"><a href="https://read.kernel.community/en/learn/module-2/engineering" className="text-blue-500 underline">Engineer Better Solutions!</a></li>
-              </ul>
-          </div>
-          </div>
-        </div>
-      </div>
-      <div className="flip-card w-full">
-          <div className="flip-card-inner relative">
-            <div className="flip-card-front bg-white rounded-md shadow-xl border-gray-200/50 border-2">
-          <div className="text-center font-black text-2xl sm:text-3xl p-8 border-b-2 border-gray-200 h-[175px]">
-            <a href="https://read.kernel.community/en/learn/module-3" className="font-bold">
-            🌐 Take Back The Web
-            </a>
-          </div>
-          <div className="grid grid-cols-2 divide-x divide-gray-200 h-[170px]">
-            <div className="py-8 px-4 text-center">
-              <div className="text-sm mb-6">Personal Inquiry</div>
-              <a href="https://read.kernel.community/en/learn/module-3/intention" className="font-semibold text-base sm:text-sm">
-              🔍 Intention
-              </a>
-            </div>
-            <div className="py-8 px-4 text-center">
-              <div className="text-sm mb-6">Web3 Inquiry</div>
-              <a href="https://read.kernel.community/en/learn/module-3/freedom" className="font-semibold text-base sm:text-sm">
-              🦄 Freedom
-              </a>
-            </div>
-          </div>
-          <div className="flip-card-back bg-gray-100 rounded-md shadow-xl border-gray-200/50 border-2 p-4">
-            <div className="text-center font-black text-xl sm:text-2xl mb-4">Extended Reading</div>
-              <ul className="list-disc list-inside">
-                <li className="my-2"><a href="https://read.kernel.community/en/learn/module-3/remember" className="text-blue-500 underline">Remember</a></li>
-                <li className="my-2"><a href="https://read.kernel.community/en/learn/module-3/time" className="text-blue-500 underline">The Present Time.</a></li>
-                <li className="my-2"><a href="https://read.kernel.community/en/learn/module-3/lock-it-open" className="text-blue-500 underline">Lock It Open</a></li>
-                <li className="my-2"><a href="https://read.kernel.community/en/learn/module-3/humility" className="text-blue-500 underline">With Humility</a></li>
-              </ul>
-          </div>
-          </div>
-        </div>
-      </div>
-      <div className="flip-card w-full">
-          <div className="flip-card-inner relative">
-            <div className="flip-card-front bg-white rounded-md shadow-xl border-gray-200/50 border-2">
-          <div className="text-center font-black text-2xl sm:text-3xl p-8 border-b-2 border-gray-200 h-[175px]">
-            <a href="https://read.kernel.community/en/learn/module-4" className="font-bold">
-            ℹ️ Internet Age Institutions
-            </a>
-          </div>
-          <div className="grid grid-cols-2 divide-x divide-gray-200 h-[170px]">
-            <div className="py-8 px-4 text-center">
-              <div className="text-sm mb-6">Personal Inquiry</div>
-              <a href="https://read.kernel.community/en/learn/module-4/governance" className="font-semibold text-base sm:text-sm">
-              👑 Govern Yourself
-              </a>
-            </div>
-            <div className="py-8 px-4 text-center">
-              <div className="text-sm mb-6">Web3 Inquiry</div>
-              <a href="https://read.kernel.community/en/learn/module-4/liberal-radical" className="font-semibold text-base sm:text-sm">
-              ➕ Radically
-              </a>
-            </div>
-          </div>
-          <div className="flip-card-back bg-gray-100 rounded-md shadow-xl border-gray-200/50 border-2 p-4">
-            <div className="text-center font-black text-xl sm:text-2xl mb-4">Extended Reading</div>
-              <ul className="list-disc list-inside">
-                <li className="my-2"><a href="https://read.kernel.community/en/learn/module-4/art" className="text-blue-500 underline">Transform</a></li>
-                <li className="my-2"><a href="https://read.kernel.community/en/learn/module-4/consensus" className="text-blue-500 underline">Consensus</a></li>
-                <li className="my-2"><a href="https://read.kernel.community/en/learn/module-4/self-enquiry" className="text-blue-500 underline">By Inventing</a></li>
-                <li className="my-2"><a href="https://read.kernel.community/en/learn/module-4/the-garden" className="text-blue-500 underline">Paradise</a></li>
-              </ul>
-          </div>
-          </div>
-        </div>
-      </div>
-      <div className="flip-card w-full">
-          <div className="flip-card-inner relative">
-            <div className="flip-card-front bg-white rounded-md shadow-xl border-gray-200/50 border-2">
-          <div className="text-center font-black text-2xl sm:text-3xl p-8 border-b-2 border-gray-200 h-[175px]">
-            <a href="https://read.kernel.community/en/learn/module-5" className="font-bold">
-            📈 Tokens and Mechanism Design
-            </a>
-          </div>
-          <div className="grid grid-cols-2 divide-x divide-gray-200 h-[170px]">
-            <div className="py-8 px-4 text-center">
-              <div className="text-sm mb-6">Personal Inquiry</div>
-              <a href="https://read.kernel.community/en/learn/module-5/listening-stories" className="font-semibold text-base sm:text-sm">
-              👂 Listening and Stories
-              </a>
-            </div>
-            <div className="py-8 px-4 text-center">
-              <div className="text-sm mb-6">Web3 Inquiry</div>
-              <a href="https://read.kernel.community/en/learn/module-5/incentives" className="font-semibold text-base sm:text-sm">
-              👨‍👩‍👧‍👦 Incentives
-              </a>
-            </div>
-          </div>
-          <div className="flip-card-back bg-gray-100 rounded-md shadow-xl border-gray-200/50 border-2 p-4">
-            <div className="text-center font-black text-xl sm:text-2xl mb-4">Extended Reading</div>
-              <ul className="list-disc list-inside">
-                <li className="my-2"><a href="https://read.kernel.community/en/learn/module-5/amazon-unbounded-search" className="text-blue-500 underline">Unbounded Search</a></li>
-                <li className="my-2"><a href="https://read.kernel.community/en/learn/module-5/the-peoples-narrative" className="text-blue-500 underline">Through Narrative</a></li>
-                <li className="my-2"><a href="https://read.kernel.community/en/learn/module-5/reveal-the-universe" className="text-blue-500 underline">Reveals Universes</a></li>
-                <li className="my-2"><a href="https://read.kernel.community/en/learn/module-5/prosocial-value" className="text-blue-500 underline">Of Prosocial Value</a></li>
-              </ul>
-          </div>
-          </div>
-        </div>
-      </div>
-      <div className="flip-card w-full">
-          <div className="flip-card-inner relative">
-            <div className="flip-card-front bg-white rounded-md shadow-xl border-gray-200/50 border-2">
-          <div className="text-center font-black text-2xl sm:text-3xl p-8 border-b-2 border-gray-200 h-[175px]">
-            <a href="https://read.kernel.community/en/learn/module-6" className="font-bold">
-            ⚖️ Scaling Principled Games
-            </a>
-          </div>
-          <div className="grid grid-cols-2 divide-x divide-gray-200 h-[170px]">
-            <div className="py-8 px-4 text-center">
-              <div className="text-sm mb-6">Personal Inquiry</div>
-              <a href="https://read.kernel.community/en/learn/module-6/learn" className="font-semibold text-base sm:text-sm">
-              🎓 Learn How To Learn
-              </a>
-            </div>
-            <div className="py-8 px-4 text-center">
-              <div className="text-sm mb-6">Web3 Inquiry</div>
-              <a href="https://read.kernel.community/en/learn/module-6/censorship-resistance" className="font-semibold text-base sm:text-sm">
-              👮 Censorship Resistance
-              </a>
-            </div>
-          </div>
-          <div className="flip-card-back bg-gray-100 rounded-md shadow-xl border-gray-200/50 border-2 p-4">
-            <div className="text-center font-black text-xl sm:text-2xl mb-4">Extended Reading</div>
-              <ul className="list-disc list-inside">
-                <li className="my-2"><a href="https://read.kernel.community/en/learn/module-6/serenity" className="text-blue-500 underline">Serenely</a></li>
-                <li className="my-2"><a href="https://read.kernel.community/en/learn/module-6/participate" className="text-blue-500 underline">Participate In</a></li>
-                <li className="my-2"><a href="https://read.kernel.community/en/learn/module-6/inventing-on-principle" className="text-blue-500 underline">Principled</a></li>
-                <li className="my-2"><a href="https://read.kernel.community/en/learn/module-6/duende" className="text-blue-500 underline">Deep Song</a></li>
-              </ul>
-          </div>
-          </div>
-        </div>
-      </div>
-      <div className="flip-card w-full">
-          <div className="flip-card-inner relative">
-            <div className="flip-card-front bg-white rounded-md shadow-xl border-gray-200/50 border-2">
-          <div className="text-center font-black text-2xl sm:text-3xl p-8 border-b-2 border-gray-200 h-[175px]">
-            <a href="https://read.kernel.community/en/learn/module-7" className="font-bold">
-            🎁 The Gift
-            </a>
-          </div>
-          <div className="grid grid-cols-2 divide-x divide-gray-200 h-[170px]">
-            <div className="py-8 px-4 text-center">
-              <div className="text-sm mb-6">Personal Inquiry</div>
-              <a href="https://read.kernel.community/en/learn/module-7/giving" className="font-semibold text-base sm:text-sm">
-              💝 Giving
-              </a>
-            </div>
-            <div className="py-8 px-4 text-center">
-              <div className="text-sm mb-6">Web3 Inquiry</div>
-              <a href="https://read.kernel.community/en/learn/module-7/scale-ability" className="font-semibold text-base sm:text-sm">
-              🏊 Scale-ability
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="flip-card-back bg-gray-100 rounded-md shadow-xl border-gray-200/50 border-2 p-4">
-            <div className="text-center font-black text-xl sm:text-2xl mb-4">Extended Reading</div>
-              <ul className="list-disc list-inside">
-                <li className="my-2"><a href="https://read.kernel.community/en/learn/module-7/the-gift" className="text-blue-500 underline">The Gift</a></li>
-                <li className="my-2"><a href="https://read.kernel.community/en/learn/module-7/no-paradigm" className="text-blue-500 underline">Of No Paradigm</a></li>
-                <li className="my-2"><a href="https://read.kernel.community/en/learn/module-7/perfection" className="text-blue-500 underline">Is Perfection</a></li>
-              </ul>
-          </div>
-          </div>
-      </div>
-      </div>
+      <FlipCardGrid />
     </div>
   )
 }
@@ -587,9 +316,9 @@ const FifthFold = () => {
 const Footer = () => {
   return (
     <div className={`h-[250px] w-full flex flex-col items-center p-3 overflow-hidden pt-12`}>
-      <Button type="primary" href="https://apply.kernel.community/">
+      <Button type="primary" href="https://apply.kernel.community/11">
         <>
-          Apply to KBX now <MoveRight />
+          Apply to KB 11 now <MoveRight />
         </>
       </Button>
       <div>
